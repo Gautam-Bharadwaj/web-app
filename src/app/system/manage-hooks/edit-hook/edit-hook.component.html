@@ -156,12 +156,6 @@
             <td mat-cell *matCellDef="let event">{{ event.actionName }}</td>
           </ng-container>
 
-          @if (cannotDeleteLastEvent) {
-            <div class="error-message">
-              <p>At least one event is required. Cannot delete the last event.</p>
-            </div>
-          }
-
           <ng-container matColumnDef="actions">
             <th mat-header-cell *matHeaderCellDef>{{ 'labels.inputs.Actions' | translate }}</th>
             <td mat-cell *matCellDef="let i = index">

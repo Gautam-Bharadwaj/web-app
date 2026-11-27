@@ -106,7 +106,6 @@ export class EditHookComponent implements OnInit {
   dataSource: MatTableDataSource<any>;
   /** Events Data. */
   eventsData: any[] = [];
-  cannotDeleteLastEvent: boolean = false;
   /** Boolean to check if events data is changed or not. */
   eventsDataChanged: Boolean = false;
   /** Sorter for events table. */
